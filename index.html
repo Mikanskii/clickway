@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ClickWay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="static/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content bg-dark p-5">
+                <div class="modal-header border-0">
+                    <div></div>
+                    <button type="button" class="btn-close fs-1 btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body align-content-center d-flex">
+                    <div class="row align-items-center justify-content-center w-100">
+                        <div class="col-4 text-center">
+                            <a class="h1 fw-light subtitle text-uppercase text-white" data-bs-dismiss="modal" href="#about">Кто мы</a>
+                            <br><br>
+                            <a class="h1 fw-light subtitle text-uppercase text-white" href="#stages">Этапы работы</a>
+                            <br><br>
+                            <a class="h1 fw-light subtitle text-uppercase text-white" href="#connect">Связь</a>
+                        </div>
+                        <div class="col-4 text-center">
+                            <a class="h1 text-white fw-light subtitle py-3" href="mailto:info@clickway.pro">info@clickway.pro</a>
+                            <br><br>
+                            <a class="h1 text-white fw-light subtitle py-3" href="tel:+79951683202">+79951683202</a>
+                            <br>
+                            <a href=""><i class="fa-brands fa-youtube me-3 fs-1 text-white mt-5"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram me-3 fs-1 text-white mt-5"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook me-3 fs-1 text-white mt-5"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-main position-relative overflow-hidden">
+        <div class="content">
+            <nav class="navbar navbar-expand-lg main-menu " style="z-index: 3;">
+                <div class="container-fluid p-5">
+                    <a type="button" class="d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                       <i class="fa-solid fa-bars text-white fs-1"></i>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                        <i class="fa-solid fa-bars text-white fs-3"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-start text-bg-dark w-100" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                           <div></div>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav text-center text-lg-start">
+                                <li class="nav-item mx-lg-5">
+                                    <a class="nav-link text-uppercase text-white fs-4" href="#about">Кто мы</a>
+                                </li>
+                                <li class="nav-item mx-lg-5">
+                                    <a class="nav-link text-uppercase text-white fs-4" href="#stages">Этапы работы</a>
+                                </li>
+                                <li class="nav-item mx-lg-5">
+                                    <a class="nav-link text-uppercase text-white fs-4" href="#connect">Связь</a>
+                                </li>
+                                <li class="nav-item ms-lg-5  stick-green">
+                                    <a class="nav-link text-white fs-4" href="mailto:info@clickway.pro">info@clickway.pro</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+            </nav>
+            <div class="container py-5">
+                <div class="row my-5 align-items-center">
+                    <div class="col-12 col-md-6 col-lg-5 py-5  text-center text-lg-start" style="z-index:1;">
+                        <h1 class="text-green logo">CLICK<span class="subtitle fw-light">WAY</span></h1>
+                        <p class="text-white subtitle fs-5 fw-light" style="line-height: 1.3;">Центр создания
+                            заряженных креативов для <br>
+                            продвижения мобильных игр и приложений
+                        </p>
+                        <img src="static/img/stars.svg" alt="planet" class="img-fluid" style="width: 300px;">
+                    </div>
+                    <div class="col-12 col-md-6 d-flex position-absolute justify-content-end mt-2"
+                        style="width: 900px;right: 0;top: 0;">
+                        <img src="static/img/planett.png" alt="planet" class="img-fluid circle img-scale d-md-inline-block d-none"
+                            style="background-color: #0097ef;">
+                        <img src="static/img/circle1.webp" alt="planet" class="img-fluid circle img-scale d-inline-block d-md-none"
+                        style="background-color: #0097ef;">
+                    </div>
+                </div>
+                <div class="py-5">
+                    <a href="#about"><img src="static/img/arrow.png" alt="arrow" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="container py-5" id="about">
+                <p class="text-white subtitle fs-4 fw-light">Приветствуем!</p>
+                <p class="text-white subtitle fs-4 fw-light" style="line-height: 1.3;">Мы здесь, чтобы разработать <br>
+                    <span class="text-green backlight fw-light">полезные</span>
+                    креативы,
+                    <span class="text-green backlight fw-light">приносящие</span><br>
+                    новые
+                    <span class="text-green backlight fw-light">прибыль</span>
+                    вашей игре или приложению
+                </p>
+                <img src="static/img/stars.svg" alt="planet" class="img-fluid" style="width: 300px;">
+                <div class="row text-end py-5 mt-5">
+                    <div class="col-12 col-lg-6 rounded-5 overflow-hidden" style="height: 400px; background: black;">
+                        <iframe class="rounded-5" width="100%" height="100%" src="https://www.youtube.com/embed/H68GgtQ-s5c" title="YouTube video player" frameborder="0" modestbranding="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <h2 class="title text-green backlight mb-5">КТО <span class="subtitle fw-light">МЫ</span></h2>
+                        <p class="text-white subtitle fs-4 mb-0 fw-light">Топим за креативность</p>
+                        <ul class="d-inline-flex justify-content-end align-items-center grade">
+                            <li class="mx-1">
+                                <div class="list"></div>
+                            </li>
+                            <li class="mx-1">
+                                <div class="list"></div>
+                            </li>
+                            <li class="mx-1">
+                                <div class="list"></div>
+                            </li>
+                            <li class="mx-1">
+                                <div class="list"></div>
+                            </li>
+                            <li class="mx-1">
+                                <div class="list"></div>
+                            </li>
+                            <li class="mx-1">
+                                <div class="list"></div>
+                            </li>
+                            <span class="text-white subtitle fs-4 fw-light">100%</span>
+                        </ul>
+                        <p class="text-white subtitle fs-4 mb-0 fw-light">Соблюдаем сроки</p>
+                        <ul class="d-inline-flex justify-content-end align-items-center grade">
+                            <li class="mx-1">
+                                <div class="list"></div>
+                            </li>
+                            <li class="mx-1">
+                                <div class="list"></div>
+                            </li>
+                            <li class="mx-1">
+                                <div class="list"></div>
+                            </li>
+                            <li class="mx-1">
+                                <div class="list"></div>
+                            </li>
+                            <li class="mx-1">
+                                <div class="list"></div>
+                            </li>
+                            <li class="mx-1">
+                                <div class="list"></div>
+                            </li>
+                            <span class="text-white subtitle fs-4 fw-light">100%</span>
+                        </ul>
+                        <p class="text-white subtitle fs-4 mb-0 fw-light">Удерживаем внимание</p>
+                        <ul class="d-inline-flex justify-content-end align-items-center grade">
+                            <li class="mx-1">
+                                <div class="list"></div>
+                            </li>
+                            <li class="mx-1">
+                                <div class="list"></div>
+                            </li>
+                            <li class="mx-1">
+                                <div class="list"></div>
+                            </li>
+                            <li class="mx-1">
+                                <div class="list"></div>
+                            </li>
+                            <li class="mx-1">
+                                <div class="list"></div>
+                            </li>
+                            <li class="mx-1">
+                                <div class="list"></div>
+                            </li>
+                            <span class="text-white subtitle fs-4 fw-light">100%</span>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="row align-items-center py-5 my-5">
+                            <div class="col-12 col-lg-2">
+                                <h2 class="title text-blue backlight">2017</h2>
+                            </div>
+                            <div class="col-12">
+                                <p class="text-white subtitle fs-4 fw-light">Занимались рекламными роликами и 3D мэппингом для
+                                    мощного привлечения аудитории</p>
+                                <i class="fas fa-map-marker-alt text-violet fs-5 me-3"></i><span
+                                    class="text-white subtitle fs-5 fw-light">Москва, Сочи, Красноярск</span>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-2">
+                                <h2 class="title text-blue backlight">2019</h2>
+                            </div>
+                            <div class="col-12">
+                                <p class="text-white subtitle fs-4 fw-light">Перешли в рекламу мобильных игр и приложений</p>
+                                <i class="fas fa-map-marker-alt text-violet fs-5 me-3"></i><span
+                                    class="text-white subtitle fs-5 fw-light">Во всем мире</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+                        <div class="d-flex flex-column">
+                            <img src="static/img/rock2.svg" alt="" class="img-fluid img-translate-bottom mb-5 pb-5"
+                                style="width: 100px;">
+                            <img src="static/img/rock3.svg" alt="" class="img-fluid img-translate-bottom"
+                                style="width: 100px;">
+                        </div>
+                        <img src="static/img/rock1.svg" alt="" class="img-fluid img-translate-top ms-5 text-end mb-5"
+                            style="width: 300px;">
+                    </div>
+                </div>
+                <div class="row my-5 py-5">
+                    <div class="col-12 col-md-6 col-lg-4 my-4 text-center text-md-start">
+                        <img src="static/img/person1.png" alt="person" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-4 text-center">
+                        <img src="static/img/person2.png" alt="person" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-4 text-center text-md-end">
+                        <img src="static/img/person3.png" alt="person" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row  py-5 align-items-center">
+                    <div class="col-12 col-xl-5 d-flex align-items-center order-2 order-xl-0">
+                        <div class="d-flex  flex-column me-5">
+                            <img src="static/img/rock3.svg" alt="" class="img-fluid img-translate-bottom mt-5"
+                                style="width: 100px;">
+                            <img src="static/img/rock1.svg" alt="" class="img-fluid img-translate-bottom m-5 p-4"
+                                style="width: 150px; transform: rotate(35deg);">
+                        </div>
+                        <img src="static/img/rock1.svg" alt="" class="img-fluid img-translate-top ms-5 text-end mb-5"
+                            style="width: 300px;">
+                    </div>
+                    <div class="col-12 col-xl-7 order-1 order-xl-0 interval-16rem">
+                        <h2 class="title text-green backlight ">90 <span class="subtitle fw-light">%</span></h2>
+                        <p class="text-green subtitle fs-4 fw-light" style="line-height: 1.3;">креотивов не заходят и у
+                            них низкий KPI ?</p>
+                        <p class="text-white subtitle fs-4 fw-light" style="line-height: 1.3;">Есть решение. Мы поможем
+                            найти лучшую <span>стратегию продвижения и повысим метрики</p>
+                    </div>
+                </div>
+                <img src="static/img/rock4.svg" alt="" class="img-fluid img-translate-top ms-5 text-end mb-5"
+                    style="width: 200px;">
+                <div class="pt-5 mt-5" id="stages">
+                    <h2 class="title text-green backlight ">КАК <span class="subtitle fw-light">РАБОТАЕМ</span></h2>
+                    <p class="text-white subtitle fs-4 mt-5 fw-light" style="line-height: 1.3;">Сотрудничаем,
+                        нацелившись <span class="text-green backlight fw-light">на реезультат</span></p>
+                    <div class="row py-5 mb-5">
+                        <div class="col-12 col-md-6 col-xxl-3 mb-3 img-scale">
+                            <div class="align-items-center d-flex justify-content-center ring text-center">
+                                <span class="text-white subtitle h4 w-50 backlight fw-light">Заключение договора,
+                                    передача материалов проекта</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xxl-3 mb-3 img-scale">
+                            <div class="align-items-center d-flex justify-content-center ring text-center">
+                                <span class="text-white subtitle h4 w-50 backlight fw-light">Создание тестового набора
+                                    креативов, тестирование</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xxl-3 mb-3 img-scale">
+                            <div class="align-items-center d-flex justify-content-center ring text-center">
+                                <span class="text-white subtitle h4 w-50 backlight fw-light">Участие в анализе,
+                                    определение образцовых креативов</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xxl-3 mb-3 img-scale">
+                            <div class="align-items-center d-flex justify-content-center ring text-center">
+                                <span class="text-white subtitle h4 w-50 backlight fw-light">Создание успешных
+                                    креативов, взлетающих в топ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-5">
+                    <h2 class="title text-green backlight ">ЧТО <span class="subtitle fw-light">МЫ УЖЕ СДЕЛАЛИ</span>
+                    </h2>
+                    <p class="text-white subtitle fs-4 my-5 fw-light" style="line-height: 1.3;">Имеем опыт создания
+                        креативов для проектов</p>
+                    <ul class="nav justify-content-between my-5">
+                        <li class="nav-item">
+                            <a href="https://hc.my.games/ru/"
+                                class="nav-link backlight fs-2 fw-bold text-violet subtitle text-decoration-none me-3">Hustle
+                                Castle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"
+                                class="nav-link backlight fs-2 fw-bold text-blue subtitle text-decoration-none me-3">Zero
+                                City</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"
+                                class="nav-link backlight fs-2 fw-bold text-violet subtitle text-decoration-none me-3">Bombastic
+                                Brothers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"
+                                class="nav-link backlight fs-2 fw-bold text-blue subtitle text-decoration-none me-3">AXES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"
+                                class="nav-link backlight fs-2 fw-bold text-violet subtitle text-decoration-none me-3">Fishdom</a>
+                        </li>
+                    </ul>
+                    <ul class="nav justify-content-between my-5">
+                        <li class="nav-item">
+                            <a href="#"
+                                class="nav-link backlight fs-2 fw-bold text-blue subtitle text-decoration-none me-3">Garden
+                                Scapes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"
+                                class="nav-link backlight fs-2 fw-bold text-violet subtitle text-decoration-none me-3">Township</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"
+                                class="nav-link backlight fs-2 fw-bold text-blue subtitle text-decoration-none me-3">Ranchdale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"
+                                class="nav-link backlight fs-2 fw-bold text-violet subtitle text-decoration-none me-3">Stack
+                                Ball</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"
+                                class="nav-link backlight fs-2 fw-bold text-blue subtitle text-decoration-none me-3">Zero
+                                to Hero</a>
+                        </li>
+                    </ul>
+                    <ul class="nav justify-content-between my-5">
+                        <li class="nav-item">
+                            <a href="#"
+                                class="nav-link backlight fs-2 fw-bold text-violet subtitle text-decoration-none me-3">Vikings:
+                                War of Clans</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"
+                                class="nav-link backlight fs-2 fw-bold text-blue subtitle text-decoration-none me-3">Zero
+                                City</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"
+                                class="nav-link backlight fs-2 fw-bold text-violet subtitle text-decoration-none me-3">Bombastic
+                                Brothers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"
+                                class="nav-link backlight fs-2 fw-bold text-blue subtitle text-decoration-none me-3">AXES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"
+                                class="nav-link backlight fs-2 fw-bold text-violet subtitle text-decoration-none me-3">Fishdom</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="py-5 my-5" id="connect">
+                    <h2 class="title text-green backlight ">НАЧНЕМ <span class="subtitle fw-light">РАБОТАТЬ
+                            ВМЕСТЕ</span></h2>
+                    <div class="row">
+                        <div class="col-12 col-lg-5 ">
+                            <div class="d-flex flex-column align-items-center my-5">
+                                <a class="fs-4 text-white subtitle text-decoration-none stick-orange"
+                                    href="mailto:info@clickway.pro">info@clickway.pro</a>
+                                <p class="text-white subtitle fs-4 mt-5 fw-light" style="line-height: 1.3;">ИЛИ</p>
+                            </div>
+                            <div class="form_answer">
+                                <form action="" method="post">
+                                    <div class="mb-5">
+                                        <input type="text" class="form-control" placeholder="Имя" aria-label="Username"
+                                            aria-describedby="basic-addon1" required>
+                                    </div>
+                                    <div class="mb-5 pb-5">
+                                        <input type="email" class="form-control" id="FormControlInput"
+                                            placeholder="E-MAIL" required>
+                                    </div>
+                                    <div class="my-5">
+                                        <textarea class="form-control" id="FormControlTextarea" rows="2"
+                                            placeholder="текст(по-желанию)"></textarea>
+                                    </div>
+                                    <div class="d-flex justify-content-center ">
+                                        <button type="submit" class="btn btn-primary mt-5 px-5 py-3">ОТПРАВИТЬ</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/54312a874e.js" crossorigin="anonymous"></script>
+    
+   
+</body>
+
+</html>

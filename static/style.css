@@ -1,0 +1,196 @@
+@font-face {
+	font-family: 'Roboto', sans-serif;
+	src: url("static/font/Roboto-Light.ttf") format("ttf");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto', sans-serif;
+	src: url("static/font/Roboto-Thin.ttf") format("ttf");
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto', sans-serif;
+	src: url("static/font/Roboto-Regular.ttf") format("ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Jost', sans-serif;
+	src: url("static/font/Jost-Black.ttf") format("ttf");
+	font-weight: 900;
+	font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+h1, h2{
+    font-family: 'Jost', sans-serif
+}
+nav.main-menu a.nav-link{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.bg-main{
+    background: rgb(19,19,53);
+    background: linear-gradient(50deg, rgba(19,19,53,1) 38%, rgba(37,89,227,1) 100%);
+}
+.text-green{
+    color: #45ffab;
+}  
+.text-blue, .text-blue:hover{
+    color: #0147ff;
+}  
+.text-violet, .text-violet:hover{
+    color: #6e1db6;
+}
+.logo{
+    font-size:120px ;
+    color: #e4ff00;
+}
+@media (max-width:765px) {
+    .logo{
+        font-size:72px;
+    }
+}
+.circle{
+    box-shadow: -1px -7px 108px 49px #0097ef;
+    border-radius: 25rem;
+}
+.img-scale{
+    transition: all 1s ease;
+}
+.img-scale:hover{
+    transform: scale(1.1);
+}
+.img-translate-top, .img-translate-bottom{
+    transition: all 1s ease;
+}
+.img-translate-top:hover{
+    transform: translate(25px, -58px);
+    transition: all 1s ease;
+}
+
+.img-translate-bottom:hover{
+    transform: translate(-10px, -10px);
+    transition: all 1s ease;
+}
+.content{
+    z-index: 2;
+}
+.stick-orange{
+    position: relative;
+}
+.stick-orange::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color:#d99a33 ;
+    height: 6px;
+    width: auto;
+    border-radius: 10px;
+}
+.stick-green{
+    position: relative;
+}
+.stick-green::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color:#45ffab ;
+    height: 6px;
+    width: 100%;
+    border-radius: 10px;
+}
+.title{
+    font-size: 72px;
+}
+.backlight{
+    transition: all .5s ease;
+}
+.backlight:hover{
+    text-shadow: 0 0 13px;
+}
+ 
+.subtitle{
+    font-family: 'Roboto', sans-serif;
+}
+.grade li{
+    list-style: none;
+    border: 2px solid white;
+    padding: 3px;
+    border-radius: 1rem;
+}
+.list{
+    background: #45ffab;
+    border-radius: 1rem;
+    width: 1rem;
+    height: 1rem;
+    box-shadow: 0 0 20px 0 #45ffab;
+}
+.interval-16rem{
+    padding-left: 16rem;
+}
+@media(max-width: 1140px) {
+    .interval-16rem {
+        padding-left: 12px;
+    }
+}
+.circle-grad{
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0) 35%, rgba(82,97,255,1) 41%, rgba(0,0,0,0) 42%);
+}
+.ring{
+    background-image: url(img/ring.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+.form_answer{
+    padding: 4rem;
+    background: #16122b;
+    border-radius: 4rem;
+}
+.form_answer .form-control{
+    background-color: transparent;
+    border-bottom: 1px solid #d99a33;
+    border-radius: 0;
+    color: #ffffff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.form-control::placeholder{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+.form-control:focus{
+    color: #ffffff;
+    background-color: transparent;
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
+}
+.form_answer .btn{
+    background-color: #24c578;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: 100;
+    border-radius: 1rem;
+    transition: all .5s cubic-bezier(0.4, 0, 1, 1);
+    border: 1px solid;
+}
+.form_answer .btn:focus{
+    box-shadow: none;
+}
+.form_answer .btn:hover{
+    background-color: #1fb46c;
+    
+    box-shadow: 0px 0px 8px 4px #28ff9e;
+}
+/* 
+border: 1px solid white;
+filter: drop-shadow(-1px 2px 3px #005); */

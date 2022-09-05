@@ -1,0 +1,51 @@
+nav class=navbar navbar-expand-lg py-5 main-menu style=z-index1;
+                    div class=container-fluid
+                        !-- div class=d-block d-lg-none navbar-brand
+                            img src=staticimgclickway_logo.png alt= class=img-fluid style=width200px;
+                        div --
+                        a class=d-none d-lg-block data-bs-toggle=offcanvas href=#offcanvasExample role=button aria-controls=offcanvasExample
+                             i class=fa-solid fa-bars text-white fs-3i
+                        a
+                        button class=navbar-toggler border-0 type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label=Toggle navigation
+                            i class=fa-solid fa-bars text-white fs-3i
+                        button
+                        div class=collapse navbar-collapse fw-light id=navbarSupportedContent
+                            ul class=navbar-nav mb-2 mb-lg-0 
+                                li class=nav-item
+                                    a class=nav-link text-uppercase text-white href=#aboutКто мыa
+                                li
+                                li class=nav-item
+                                    a class=nav-link text-uppercase text-white href=#stagesЭтапы работыa
+                                li
+                                li class=nav-item
+                                    a class=nav-link text-uppercase text-white href=#designДизайнерамa
+                                li
+                                li class=nav-item
+                                    a class=nav-link text-uppercase text-white href=#connectСвязьa
+                                li
+                                li class=nav-item
+                                    a class=nav-link text-white href=mailtoinfo@clickway.proinfo@clickway.proa
+                                li
+                            ul
+                        div
+                    div
+                nav
+
+
+
+<div class="collapse navbar-collapse fw-light" id="navbarSupportedContent">
+                            <ul class="navbar-nav mb-2 mb-lg-0 ">
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase text-white fs-4" href="#about">Кто мы</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase text-white fs-4" href="#stages">Этапы работы</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase text-white fs-4" href="#connect">Связь</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white fs-4" href="mailto:info@clickway.pro">info@clickway.pro</a>
+                                </li>
+                            </ul>
+                        </div>

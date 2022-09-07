@@ -7,12 +7,14 @@
     <title>ClickWay</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link href="static/style.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/owl.carousel.css">
+    <link rel="stylesheet" href="static/css/owl.theme.default.css">
 </head>
 
 <body>
@@ -63,17 +65,17 @@
                         </div>
                         <div class="offcanvas-body">
                             <ul class="navbar-nav text-center text-lg-start">
-                                <li class="nav-item mx-lg-5">
-                                    <a class="nav-link text-uppercase text-white fs-4" href="#about">Кто мы</a>
+                                <li class="nav-item ms-lg-5">
+                                    <a class="nav-link text-uppercase text-white fs-5" href="#about">Кто мы</a>
                                 </li>
-                                <li class="nav-item mx-lg-5">
-                                    <a class="nav-link text-uppercase text-white fs-4" href="#stages">Этапы работы</a>
+                                <li class="nav-item ms-lg-5">
+                                    <a class="nav-link text-uppercase text-white fs-5" href="#stages">Этапы работы</a>
                                 </li>
-                                <li class="nav-item mx-lg-5">
-                                    <a class="nav-link text-uppercase text-white fs-4" href="#connect">Связь</a>
+                                <li class="nav-item ms-lg-5">
+                                    <a class="nav-link text-uppercase text-white fs-5" href="#connect">Связь</a>
                                 </li>
                                 <li class="nav-item ms-lg-5  stick-green">
-                                    <a class="nav-link text-white fs-4" href="mailto:info@clickway.pro">info@clickway.pro</a>
+                                    <a class="nav-link text-white fs-5" href="mailto:info@clickway.pro">info@clickway.pro</a>
                                 </li>
                             </ul>
                         </div>
@@ -83,7 +85,7 @@
             <div class="container py-5 mb-5">
                 <div class="row my-5 align-items-center pb-5">
                     <div class="col-12 col-md-6 col-lg-5 py-5  text-center text-lg-start" style="z-index:1;">
-                        <h1 class="text-green logo">CLICK<span class="subtitle fw-light">WAY</span></h1>
+                        <h1 class="text-green logo pt-5 pb-4 stick-grad">CLICK<span class="subtitle fw-light">WAY</span></h1>
                         <p class="text-white subtitle fs-5 fw-light" style="line-height: 1.3;">Центр создания
                             заряженных креативов для <br>
                             продвижения мобильных игр и приложений
@@ -406,8 +408,26 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/54312a874e.js" crossorigin="anonymous"></script>
-    
-   
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+   <script>
+        $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+   </script>
 </body>
 
 </html>
